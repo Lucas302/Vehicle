@@ -8,9 +8,14 @@ namespace Vehicle
 {
     public class TruckTemplate
     {
-        public TruckTemplate()
+        string licence;
+        float speedKm;
+        float freight;
+        public TruckTemplate(string licence, float speedKm, float freight)
         {
-            throw new NotImplementedException();
+            this.licence = licence;
+            this.speedKm = speedKm;
+            this.freight = freight;
         }
 
         public string LicencePlate()

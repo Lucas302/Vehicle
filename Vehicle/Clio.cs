@@ -8,17 +8,11 @@ namespace Vehicle
 {
     public class Clio : ICar
     {
-        string licence;
-        float speedKm;
-        int passengers;
         CarTemplate implementation;
 
         public Clio(string licence, float speedKm, int passengers)
         {
-            this.licence = licence;
-            this.speedKm = speedKm;
-            this.passengers = passengers;
-            implementation = new CarTemplate();
+            implementation = new CarTemplate(licence, speedKm, passengers);
         }
 
         public string LicencePlate()

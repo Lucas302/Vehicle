@@ -8,9 +8,15 @@ namespace Vehicle
 {
     public class CarTemplate
     {
-        public CarTemplate()
+        string licence;
+        float speedKm;
+        int passengers;
+
+        public CarTemplate(string licence, float speedKm, int passengers)
         {
-            throw new NotImplementedException();
+            this.licence = licence;
+            this.speedKm = speedKm;
+            this.passengers = passengers;
         }
 
         public string LicencePlate()
